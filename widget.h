@@ -2,6 +2,7 @@
 #define WIDGET_H
 #include "game.h"
 #include <QWidget>
+#include <iostream>
 #include <QKeyEvent>
 #include <QTimer>
 
@@ -13,6 +14,7 @@ class Widget : public QWidget
 {
     Q_OBJECT
     QColor tileB;
+    QColor tile2,tile4,tile8,tile16,tile32;
 
 public:
     explicit Widget(QWidget *parent = 0);
@@ -20,8 +22,10 @@ public:
 
 private:
     void paintEvent(QPaintEvent *event);
+    void keyPressEvent(QKeyEvent *e);
     void drawMap();
-    void drawTile(QPainter painter);
+    void drawTile();
+    void setColor();
     Ui::Widget *ui;
 };
 

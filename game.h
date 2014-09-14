@@ -4,8 +4,11 @@
 #include "widget.h"
 #include <QPainter>
 #include <cstdlib>
+#include <QString>
+#include <iostream>
 #include <QImage>
 #include <QTimer>
+#include <QFont>
 #include <QColor>
 
 const int WIDTH = 400;
@@ -21,13 +24,11 @@ class Game
     int spawnDoubleProcent;
 
 public:
+    QFont font;
     int map[4][4];
+    QPoint coordinates[4][4];
     QColor background;
     QColor tileColor;
-
-    QImage tile2;
-    QImage tile4;
-
     int score;
 
 public:
