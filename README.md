@@ -13,5 +13,4 @@ My QT project. QTWidget class was used. It is not a beautiful code...
 -Added keyEvent function.
 
 =======
-Stable version - 0.5a.
 >>>>>>> b2344a680464690ae7bff4ab3744fd1fbee1e9e4
